@@ -1,6 +1,6 @@
 months=["January","February","March","April","May","June","July","August","September","October","November","December"]
 
- exports.findPlayerById = function(playerId){
+ module.exports.findPlayerById = function(playerId){
 	var tempPlayer=null;
 	for(i in g_players){
 		console.log("player",g_players[i])
@@ -16,7 +16,7 @@ months=["January","February","March","April","May","June","July","August","Septe
 		return tempPlayer;
 	}
 };
-exports.findBestScoredInMonth = function(month){
+module.exports.findBestScoredInMonth = function(month){
 	var numScored=0;
 	var tempPlayer=null,exsit=0;
 	for(i in months){
