@@ -6,6 +6,7 @@ app = express();
 
 /******* DB and init ********/
 
+
 var Player1={
 	"playerId":1,
 	"scoredGoals":6,
